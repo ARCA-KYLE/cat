@@ -1,0 +1,47 @@
+/* Full-screen background image */
+body {
+    background-image: url('https://i.imgur.com/FPwqHva.jpeg'); /* Direct image URL */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures full image is visible */
+    background-attachment: fixed;
+    background-color: black; /* Adds a fallback color if image doesn't load */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Keeps your container as is */
+.container {
+    background: lightblue;
+    padding: 9px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 1px; /* Moves right */
+    top: 70px; /* Moves down */
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes-button {
+    background-color: green;
+    color: white;
+}
+
+.no-button {
+    background-color: red;
+    color: white;
+}
